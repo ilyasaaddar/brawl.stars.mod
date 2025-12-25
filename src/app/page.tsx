@@ -48,6 +48,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative z-10 py-16 md:py-24">
         <div className="container mx-auto px-4">
+          {/* Game Icon - Top Center */}
+          <div className="flex justify-center mb-8">
+            <img
+              src="https://i.ibb.co/d4Bcz7F7/brawl-stars-mod-apk.webp"
+              alt="Brawl Stars Mod APK"
+              className="w-40 h-40 md:w-48 md:h-48 object-contain drop-shadow-2xl hover:scale-110 transition-transform cursor-pointer"
+            />
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
@@ -108,15 +117,6 @@ export default function Home() {
             </div>
 
             <div className="relative">
-              {/* Game Icon - Top Right */}
-              <div className="absolute -top-4 -right-4 z-20">
-                <img
-                  src="https://i.ibb.co/d4Bcz7F7/brawl-stars-mod-apk.webp"
-                  alt="Brawl Stars Mod APK"
-                  className="w-24 h-24 md:w-32 md:h-32 object-contain drop-shadow-2xl animate-pulse hover:scale-110 transition-transform cursor-pointer"
-                />
-              </div>
-
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-orange-500/20">
                 <img
                   src="/brawl-stars-hero.png"
