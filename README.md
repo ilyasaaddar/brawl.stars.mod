@@ -1,141 +1,157 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 🎮 Brawl Stars Mod Landing Page
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+A professional, high-converting landing page for a Brawl Stars Mod with OGADS integration. This project features a modern, responsive design optimized for maximum conversions.
 
-## ✨ Technology Stack
+![Version](https://img.shields.io/badge/version-V64.264-blue)
+![Next.js](https://img.shields.io/badge/Next.js-15.3-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 
-This scaffold provides a robust foundation built with:
+## ✨ Features
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+- 🎯 **High-Converting Design** - Professional landing page optimized for OGADS conversions
+- 📱 **Fully Responsive** - Mobile-first design that looks great on all devices
+- 🎨 **Modern UI** - Built with Tailwind CSS and shadcn/ui components
+- 🚀 **Fast Performance** - Optimized Next.js 15 with App Router
+- 🎬 **Promotional Images** - AI-generated high-quality images included
+- ⚡ **Instant Loading** - Optimized for fast load times
+- 🌙 **Dark Mode Support** - Built-in theme support with next-themes
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+## 🛠️ Tech Stack
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 4
+- **UI Components**: shadcn/ui (New York style)
+- **Icons**: Lucide React
+- **Database**: Prisma ORM with SQLite
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Fetch** - Promise-based HTTP request
+## 📦 Installation
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/brawl-stars-mod-landing.git
+   cd brawl-stars-mod-landing
+   ```
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+2. **Install dependencies**
+   ```bash
+   bun install
+   ```
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+3. **Run development server**
+   ```bash
+   bun run dev
+   ```
 
-## 🎯 Why This Scaffold?
+4. **Open in browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+## 🎯 Customization
 
-## 🚀 Quick Start
+### Update OGADS Link
 
-```bash
-# Install dependencies
-bun install
+Edit `src/app/page.tsx` line 17:
 
-# Start development server
-bun run dev
-
-# Build for production
-bun run build
-
-# Start production server
-bun start
+```typescript
+const ogadsLink = 'https://lockedapp.org/cl/i/9v9q8v' // Your OGADS link here
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+### Update Version Number
 
-## 🤖 Powered by Z.ai
+Edit `src/app/page.tsx` line 43:
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+```tsx
+<Badge>V64.264 Latest</Badge>
+```
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+### Replace Images
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+Replace images in the `public/` folder:
+- `brawl-stars-hero.png` - Hero section image
+- `brawl-stars-features.png` - Features section image
+- `brawl-stars-download.png` - Download section image
 
 ## 📁 Project Structure
 
 ```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+my-project/
+├── public/                    # Static assets
+│   ├── brawl-stars-hero.png
+│   ├── brawl-stars-features.png
+│   └── brawl-stars-download.png
+├── src/
+│   ├── app/
+│   │   └── page.tsx          # Main landing page
+│   ├── components/
+│   │   └── ui/               # shadcn/ui components
+│   └── lib/
+│       └── db.ts             # Database client
+├── prisma/
+│   └── schema.prisma         # Database schema
+└── worklog.md                # Development work log
 ```
 
-## 🎨 Available Features & Components
+## 🎨 Key Sections
 
-This scaffold includes a comprehensive set of modern web development tools:
+1. **Header** - Branding and version display
+2. **Hero Section** - Main CTA with download button
+3. **Stats Bar** - Download count, rating, and support info
+4. **Features** - 6 feature cards highlighting mod capabilities
+5. **How It Works** - 3-step installation guide
+6. **FAQ** - Common questions and answers
+7. **Testimonials** - User reviews and ratings
+8. **Footer** - Branding and copyright
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+## 🚀 Deployment
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+### Vercel (Recommended)
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+1. Push code to GitHub
+2. Import repository to [Vercel](https://vercel.com)
+3. Deploy automatically
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Fetch + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+### Other Platforms
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+The project can be deployed to any platform that supports Next.js:
+- Netlify
+- Render
+- Railway
+- DigitalOcean App Platform
 
-## 🤝 Get Started with Z.ai
+## 📝 Scripts
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+```bash
+bun run dev          # Start development server
+bun run build        # Build for production
+bun run lint         # Run ESLint
+bun run db:push      # Push database schema
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+- Improve documentation
+
+## 📄 License
+
+This project is a fan-made modification and is not affiliated with Supercell or Brawl Stars.
+
+## ⚠️ Disclaimer
+
+This is a demonstration landing page. Please ensure you comply with OGADS terms of service and Supercell's guidelines when using this page.
+
+## 🙏 Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Brawl Stars](https://www.supercell.com/en/games/brawlstars)
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+Made with ❤️ for the Brawl Stars community
+
+**Note**: Replace `your-username` in the clone URL with your actual GitHub username.
