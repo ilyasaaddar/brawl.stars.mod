@@ -108,6 +108,15 @@ export default function Home() {
             </div>
 
             <div className="relative">
+              {/* Game Icon - Top Right */}
+              <div className="absolute -top-4 -right-4 z-20">
+                <img
+                  src="https://i.ibb.co/d4Bcz7F7/brawl-stars-mod-apk.webp"
+                  alt="Brawl Stars Mod APK"
+                  className="w-24 h-24 md:w-32 md:h-32 object-contain drop-shadow-2xl animate-pulse hover:scale-110 transition-transform cursor-pointer"
+                />
+              </div>
+
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-orange-500/20">
                 <img
                   src="/brawl-stars-hero.png"
